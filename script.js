@@ -25,3 +25,15 @@ function trocarImagem() {
 function fecharModal() {
     modal.classList.remove("ativo");
 }
+
+// Hero Parallax
+
+const bg = document.querySelector('.hero-bg');
+const title = document.querySelector('.hero-title');
+
+window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+
+    bg.style.transform = `translateY(${scrollY * 0.3}px)`;
+    title.style.transform = `translate(-50% + ${scrollY * 0.6}px)`;
+});
