@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+:root {
+    --font: "Inter";
+    --color-primary: #0D0D0D;
+    --color-secondary: #8C0404;
+    --color-tertiary: #F2D027;
+    --color-title: #D9A404;
+    --color-text: #fff
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+}

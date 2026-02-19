@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limbus Company</title>
+    <link rel="shortcut icon" href="assets/images/limbusicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="modalConvite" class="modal">
+        <div class="modal-content">
+            <img id="convite" class="ativa" src="assets/images/convite.jfif" alt="Convite Limbus">
+            <img  id="loc"src="assets/images/loc.jfif" alt="Localização Limbus">
+            <div class="modal-content-buttons">
+                <button class="fechar" onclick="Recusar()" id="fechar">Recusar</button>
+                <button class="aceitar" onclick="trocarImagem()" id="trocar">Aceitar</button>
+                <button class="entrar" onclick="fecharModal()" id="entrar" style="display: none;">Entrar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
