@@ -5,13 +5,19 @@
     src: url(../assets/fonts/Inter-VariableFont_opsz\,wght.ttf);
 }
 
+@font-face {
+    font-family: TagMaker;
+    src: url(../assets/fonts/tagmarker.ttf);
+}
+
 :root {
     --font: "Inter";
+    --font-title: "TagMaker";
     --color-primary: #0D0D0D;
     --color-secondary: #8C0404;
     --color-tertiary: #F2D027;
     --color-title: #D9A404;
-    --color-text: #fff
+    --color-text: #d6d6d6;
 }
 
 * {

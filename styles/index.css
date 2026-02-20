@@ -2,7 +2,18 @@
 @import url(global.css);
 
 body {
-    background-color: var(--color-primary);
+  background:
+    radial-gradient(
+      circle at 50% 10%,
+      rgba(140, 4, 4, 0.12),
+      transparent 60%
+    ),
+    linear-gradient(
+      to bottom,
+      var(--color-primary) 0%,
+      #111111 100%
+    )
+  ;
 }
 
 .modal {
@@ -113,44 +124,93 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
-  padding: 1rem;
+  margin-top: 0.5rem;
+  padding: 6rem 2rem;
 }
 
-.tablet-title, .desktop-title {
-  display: none;
+.history-title {
+  position: relative;
+  font-family: var(--font-title);
+  font-weight: 300;
+  font-size: clamp(2.2rem, 2vw, 3.5rem);
+  letter-spacing: 1px;
+  text-align: center;
+  color: var(--color-tertiary);
 }
 
 .history-p {
-  margin: 1rem 0;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  margin: 1.2rem 0;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.7;
+  letter-spacing: 0.5px;
   text-align: justify;
   color: var(--color-text);
   hyphens: auto;
 }
 
-@media (min-width: 768px){
-  
-  .mobile-title {
-    display: none;
-  }
-
-  .tablet-title {
-    display: block;
-  }
-}
-
 @media (min-width: 1024px){
-  
-  .tablet-title {
-    display: none;
-  }
-
-  .desktop-title {
-    display: block;
-  }
 
   .history-content {
-    max-width: 50%;
+    margin: 0 auto;
+    max-width: 850px;
   }
 }
+
+/* CHARACTHERS SECTION */
+
+.characters-section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.characters-title {
+  text-align: center;
+}
+
+.characters-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.characters-button {
+  position: relative;
+  border: none;
+  border-radius: 8px;
+  padding: 1em clamp(0.5em, 1vw, 1em);
+  font-size: clamp(0.8rem, 2vw, 1.5rem);
+  font-weight: 800;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.characters-button.active {
+  color: var(--color-secondary);
+}
+
+.characters-button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  height: 2px;
+  width: 0;
+  background-color: var(--color-tertiary);
+  transition: width 0.6s ease, left 0.3s ease;
+}
+
+.characters-button:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.characters-button:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+
+
