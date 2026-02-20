@@ -105,3 +105,52 @@ body {
     pointer-events: none;
     will-change: transform;
 }
+
+/* HISTORY SECTION */
+
+.history-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.tablet-title, .desktop-title {
+  display: none;
+}
+
+.history-p {
+  margin: 1rem 0;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  text-align: justify;
+  color: var(--color-text);
+  hyphens: auto;
+}
+
+@media (min-width: 768px){
+  
+  .mobile-title {
+    display: none;
+  }
+
+  .tablet-title {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px){
+  
+  .tablet-title {
+    display: none;
+  }
+
+  .desktop-title {
+    display: block;
+  }
+
+  .history-content {
+    max-width: 50%;
+  }
+}
