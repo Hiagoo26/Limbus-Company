@@ -117,14 +117,40 @@ body {
   padding: 1rem;
 }
 
-.history-title {
-  font-weight: 900;
-  text-align: center;
-  color: var(--color-tertiary);
+.tablet-title, .desktop-title {
+  display: none;
 }
 
 .history-p {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   text-align: justify;
   color: var(--color-text);
+  hyphens: auto;
+}
+
+@media (min-width: 768px){
+  
+  .mobile-title {
+    display: none;
+  }
+
+  .tablet-title {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px){
+  
+  .tablet-title {
+    display: none;
+  }
+
+  .desktop-title {
+    display: block;
+  }
+
+  .history-content {
+    max-width: 50%;
+  }
 }
