@@ -37,3 +37,14 @@ window.addEventListener("scroll", () => {
     bg.style.transform = `translateY(${scrollY * 0.3}px)`;
     title.style.transform = `translate(-50% + ${scrollY * 0.6}px)`;
 });
+
+// Button Characters active
+
+const buttons = document.querySelectorAll('.characters-button');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        button.classList.add('active');
+        buttons.forEach(btn => btn.classList.remove('active'));
+    });
+})
