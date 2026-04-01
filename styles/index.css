@@ -95,14 +95,20 @@ body {
 
 .hero-section {
     position: relative;
-    height: 100vh;
-    overflow: hidden;
+    border-bottom: 5px solid var(--color-secondary);
+    height: 80vh;
+}
+
+@media (min-width: 1024px) {
+  .hero-section {
+    height: 95vh;
+  }
 }
 
 .hero-bg {
     position: absolute;
     inset: 0;
-    background: url(../assets/images/limbusart2.jfif) center/cover no-repeat;
+    background: #000 center/cover no-repeat;
     transform: translateY(0);
     will-change: transform;
 }
@@ -222,37 +228,77 @@ body {
 }
 
 .characters-player, .characters-npc {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .character-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
+  border: 2px solid var(--firstcolor);
   border-radius: 50%;
   overflow: hidden;
-  height: 250px;
-  width: 250px;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  transition: all 0.7s ease-in-out;
   background: #1e1e1e;
-  transition: 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (min-width: 1024px) {
+  .character-card {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+.character-card img {
+  border: 1px solid var(--color-primary);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .character-card:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 25px rgb(185, 160, 17);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.character-card:active {
+  transform: scale(0.95);
+}
+
+.moose:hover{
+  box-shadow: 0 0 25px #b9a011;
 }
 
 .klaus:hover {
-  box-shadow: 0 0 25px rgb(64, 8, 168);
+  box-shadow: 0 0 25px #4008a8;
 }
 
-.character-card img {
-  width: 100%;
-  height: 100%;
-  object-position: top center;
-  object-fit: cover;
+.lenora:hover {
+  box-shadow: 0 0 25px #e67105;
 }
 
+.luiz:hover {
+  box-shadow: 0 0 25px #810303;
+}
+
+.malik:hover {
+  box-shadow: 0 0 25px #e73c3c;
+}
+
+.mara:hover {
+  box-shadow: 0 0 25px #0e3309;
+}
+
+.miyu:hover{
+  box-shadow: 0 0 25px #fff;
+}
+
+.lilith:hover {
+  box-shadow: 0 0 25px yellow;
+}
