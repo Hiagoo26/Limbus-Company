@@ -48,7 +48,7 @@
         </nav>
         <div class="characters-content">
             <div id="players" class="characters-player">
-                <button class="character-card moose">
+                <button class="character-card moose" onclick="abrirModal(moose)">
                     <img src="assets/images/mousse.png" alt="Alexandre Moose">
                 </button>
                 <button class="character-card klaus">
@@ -69,7 +69,7 @@
                 <button class="character-card miyu">
                     <img src="assets/images/miyu.jpg" alt="Miyu">
                 </button>
-                <button class="character-card lilith">
+                <button class="character-card lilith" onclick="abrirModal('lilith')" disabled>
                     <img src="assets/images/lilith.png" alt="Lilith">
                 </button>
             </div>
@@ -93,6 +93,15 @@
         </div>
     </div>
 
+    <!-- Modal pp-->
+    <div id="modal" class="modal-pp hidden">
+        <div class="modal-content-pp">
+            <i class="fa-solid fa-xmark close" id="fecharpp"></i>
+            <div id="body-modal">
+        </div>
+    </div>
+
     <script src="script.js"></script>
+    <script src="scripts/modal.js" defer></script>
 </body>
 </html>

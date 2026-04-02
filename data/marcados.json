@@ -1,0 +1,16 @@
+{
+    "lilith": {
+        "nome": "Lilith",
+        "imagem": "../assets/images/lilith.png",
+        "idade": "22",
+        "descricao": "1,65 de altura, 64kg, Cabelos longos castanhos, olhos amarelos quase dourado, tatuagens no braço esquerdo, várias cicatrizes em sua pele, cortes leves mas profundo. Seus olhos são delicados e frio, mostrando uma bondade genuína, mas também a sua frieza. Seu rosto meio arredondado mas um pouco pontudo no queixo, não usa maquiagem, além de um rosa bem leve nos lábios. Suas roupas são sempre uma casal preta confortável e um croped regata vermelho, também tem tatuagens no seu abdômen que levam ate as costas, mas apenas no lado esquerdo, tem o símbolo de conhecimento no ombro e o de morte no lado direito da barriga",
+        "historia": "Viviam sendo espancada pelo seu pai, chefe de uma organização. Aos 17/19 anos, foi resgatada pelo seu professor particular e levada para a ordem brasileira, lá conheceu pessoas que a ajudaram e acolheram. Treinou como nunca e o máximo que pode, treinando dia e noite, assim chegando a sua patente de agente especial",
+        "objetivo": "Salvar quem puder, ser para as pessoas aquilo que ela não teve, fazer o mundo um lugar melhor, com seu equilíbrio, e o paranormal enfraquecer.",
+        "fragmentos": [
+            {
+                "titulo": "FRAGMENTO DE LILITH.",
+                "texto": "Lilith estava limpando sua arma, parecia seria e concentrada. Arthur chegava sentando-se ao seu lado\n\nOi Lilith, fico feliz que goste tanto dela\n\nEu amo!\n\nLilith ficava mais animada quando via Arthur\n\nVoltou mais cedo da missão?\n\nSim, e trouxe um presente para você\n\nEle mostrava um violão, não era tão novo, mas mostrava ter muitas memórias e ser de qualidade\n\nVou ensinar você a tocar violão e este será seu\n\nLilith ficava bem surpresa e parava de fazer o que fazia\n\nMas você me disse que só ensinaria e entregaria isso para um filho seu..\n\nLilith, já estou ficando velho... é mesmo que eu vá ter filhos, quero entregar isso para você\n\nEla ficava sem reação, mas aceitava. Assim com os dias Arthur ensinava como tocar, acordes, músicas, afinação, entre outros. Lilith mostrava que estava bem feliz, ela se sentia acolhida e pertencente a um lugar"
+            }
+        ]
+    }
+}
